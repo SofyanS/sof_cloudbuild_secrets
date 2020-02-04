@@ -1,0 +1,13 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello world action
+        env: # As an environment variable
+          mysecret: ${{ secrets.mysecret }}
